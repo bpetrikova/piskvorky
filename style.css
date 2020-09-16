@@ -26,4 +26,14 @@ img {
 }
 
 a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.pravidla {
+  background-color: #1fcca4;
+}
+
+.zacit-hrat {
+  background-color: #0197f6;
 }
