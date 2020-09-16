@@ -2,12 +2,28 @@ h1 {
   font-family: Lobster;
 }
 
+.vizual {
+  background-color: #283e50;
+}
+
 body {
   width: 300px;
   height: 500px;
+  color: #ffffff;
   background: linear-gradient(#615dad, #ffc8da);
 }
 
 img {
-  width: 70%;
+  width: 300px;
+}
+
+.ul {
+  display: inline-block;
+}
+
+.li {
+  width: 100%;
+}
+
+a {
 }
