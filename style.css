@@ -17,23 +17,37 @@ img {
   width: 300px;
 }
 
-.ul {
-  display: inline-block;
+ul {
+  padding-inline-start: 0;
 }
 
-.li {
+li {
   width: 100%;
+  padding: 15px 0 15px 0;
+  display: inline-block;
 }
 
 a {
   text-decoration: none;
   color: #ffffff;
+  width: 100%;
+  padding: 15px 0 15px 0;
 }
 
 .pravidla {
   background-color: #1fcca4;
 }
 
+.pravidla a:focus,
+.pravidla a:hover {
+  background-color: #1cbb96;
+}
+
 .zacit-hrat {
   background-color: #0197f6;
+}
+
+.zacit-hrat a:focus,
+.zacit-hrat a:hover {
+  background-color: #0090e9;
 }
