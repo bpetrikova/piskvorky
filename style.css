@@ -23,7 +23,7 @@ ul {
 
 li {
   width: 100%;
-  padding: 15px 0 15px 0;
+  text-align: center;
   display: inline-block;
 }
 
@@ -32,15 +32,22 @@ a {
   color: #ffffff;
   width: 100%;
   padding: 15px 0 15px 0;
+  display: inline-block;
+}
+
+.pravidla a,
+.zacit-hrat a {
 }
 
 .pravidla {
   background-color: #1fcca4;
+  width: 100%;
 }
 
 .pravidla a:focus,
 .pravidla a:hover {
   background-color: #1cbb96;
+  width: 100%;
 }
 
 .zacit-hrat {
@@ -50,4 +57,5 @@ a {
 .zacit-hrat a:focus,
 .zacit-hrat a:hover {
   background-color: #0090e9;
+  width: 100%;
 }
