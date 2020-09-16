@@ -1,0 +1,13 @@
+h1 {
+  font-family: Lobster;
+}
+
+body {
+  width: 300px;
+  height: 500px;
+  background: linear-gradient(#615dad, #ffc8da);
+}
+
+img {
+  width: 70%;
+}
