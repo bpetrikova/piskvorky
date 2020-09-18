@@ -2,17 +2,20 @@ h1 {
   font-family: Lobster;
   text-align: center;
   margin: 0;
-  padding-top: 5px;
+  padding-top: 20px;
 }
 
-p {
+.barvicka p {
   padding-left: 20px;
   padding-right: 20px;
-  text-align: 1.5px;
+  text-align: center;
+  font-family: sans-serif;
+  line-height: 1.6;
 }
 
-.vizual {
-  display: block;
+.kontejner {
+  width: 350px;
+  height: 800px;
 }
 
 .barvicka {
@@ -21,10 +24,9 @@ p {
 
 body {
   display: flex;
-  align-items: center;
   justify-content: center;
-  width: 350px;
-  height: 800px;
+  align-items: center;
+  flex-direction: column;
   color: #ffffff;
   background: linear-gradient(#615dad, #ffc8da);
   background-attachment: fixed;
@@ -61,7 +63,7 @@ a {
 .pravidla {
   background-color: #1fcca4;
   width: 100%;
-  margin-bottom: 3px;
+  margin-bottom: 1.5px;
 }
 
 .pravidla a:focus,
