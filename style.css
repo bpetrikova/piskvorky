@@ -1,20 +1,39 @@
 h1 {
   font-family: Lobster;
+  text-align: center;
+  margin: 0;
+  padding-top: 5px;
+}
+
+p {
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: 1.5px;
 }
 
 .vizual {
+  display: block;
+}
+
+.barvicka {
   background-color: #283e50;
 }
 
 body {
-  width: 300px;
-  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 350px;
+  height: 800px;
   color: #ffffff;
   background: linear-gradient(#615dad, #ffc8da);
+  background-attachment: fixed;
 }
 
 img {
-  width: 300px;
+  width: 350px;
+  border-radius: 20px 20px 0 0;
+  margin-bottom: -5px;
 }
 
 ul {
@@ -42,6 +61,7 @@ a {
 .pravidla {
   background-color: #1fcca4;
   width: 100%;
+  margin-bottom: 3px;
 }
 
 .pravidla a:focus,
