@@ -3,6 +3,8 @@ h1 {
   text-align: center;
   margin: 0;
   padding-top: 20px;
+  font-size: 3em;
+  font-weight: 400;
 }
 
 .barvicka p {
@@ -14,8 +16,8 @@ h1 {
 }
 
 .kontejner {
-  width: 350px;
-  height: 800px;
+  width: 27.5%;
+  margin-top: 60px;
 }
 
 .barvicka {
@@ -32,20 +34,21 @@ body {
   background-attachment: fixed;
 }
 
-img {
-  width: 350px;
-  border-radius: 20px 20px 0 0;
+.uvodni {
+  border-radius: 2% 2% 0 0;
   margin-bottom: -5px;
+  width: 100%;
 }
 
 ul {
   padding-inline-start: 0;
 }
 
-li {
+ul li {
   width: 100%;
-  text-align: center;
   display: inline-block;
+  list-style-type: none;
+  text-align: center;
 }
 
 a {
@@ -80,4 +83,31 @@ a {
 .zacit-hrat a:hover {
   background-color: #0090e9;
   width: 100%;
+}
+
+ol img {
+  width: 1rem;
+}
+
+.black {
+  filter: invert(100%);
+}
+
+.navod {
+  border-radius: 20px 20px 0 0;
+}
+
+.navod li {
+  padding-left: 20px;
+  padding-right: 20px;
+  font-family: sans-serif;
+  line-height: 1.6;
+}
+
+.instrukce img {
+  width: 90%;
+}
+
+.instrukce {
+  text-align: start;
 }
