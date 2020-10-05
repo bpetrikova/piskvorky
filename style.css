@@ -68,9 +68,6 @@ a {
   display: inline-block;
 }
 
-.pravidla a,
-.zacit-hrat a {
-}
 
 .pravidla,
 .uvodni-stranka {
@@ -110,13 +107,8 @@ ol img {
   width: 1rem;
 }
 
-.black {
-  filter: invert(100%);
-}
-
 .navod {
   border-radius: 15px 15px 0 0;
-  margin-bottom: -150px;
 }
 
 .navod li {
@@ -148,7 +140,7 @@ em {
 
 @media screen and (min-width: 541px) {
   .navod {
-    width: 80%;
+    width: 60%;
   }
 
   .instrukce {
@@ -157,6 +149,39 @@ em {
   }
 
   .wrap {
-    flex: 1 1 40%;
+    flex: 1 1 35%;
+}
+
+.wrap:nth-child(even) {
+  margin: 15px 15px 15px 15px;
+}
+
+.wrap:nth-child(odd) {
+  margin: 15px 0 15px 15px;
+}
+
+
+
+@media screen and (min-width: 1041px) {
+  .navod {
+    width: 60%;
   }
+  .instrukce {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .wrap {
+    flex: 1 1 35%;
+}
+
+.wrap:nth-child(even) {
+  margin: 15px 15px 15px 15px;
+}
+
+.wrap:nth-child(odd) {
+  margin: 15px 0 15px 15px;
+}
+
+
 }
