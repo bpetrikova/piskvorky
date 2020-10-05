@@ -68,7 +68,6 @@ a {
   display: inline-block;
 }
 
-
 .pravidla,
 .uvodni-stranka {
   background-color: #1fcca4;
@@ -150,17 +149,16 @@ em {
 
   .wrap {
     flex: 1 1 35%;
+  }
+
+  .wrap:nth-child(even) {
+    margin: 15px 15px 15px 15px;
+  }
+
+  .wrap:nth-child(odd) {
+    margin: 15px 0 15px 15px;
+  }
 }
-
-.wrap:nth-child(even) {
-  margin: 15px 15px 15px 15px;
-}
-
-.wrap:nth-child(odd) {
-  margin: 15px 0 15px 15px;
-}
-
-
 
 @media screen and (min-width: 1041px) {
   .navod {
@@ -173,15 +171,13 @@ em {
 
   .wrap {
     flex: 1 1 35%;
-}
+  }
 
-.wrap:nth-child(even) {
-  margin: 15px 15px 15px 15px;
-}
+  .wrap:nth-child(even) {
+    margin: 15px 15px 15px 15px;
+  }
 
-.wrap:nth-child(odd) {
-  margin: 15px 0 15px 15px;
-}
-
-
+  .wrap:nth-child(odd) {
+    margin: 15px 0 15px 15px;
+  }
 }
