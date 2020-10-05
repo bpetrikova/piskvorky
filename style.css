@@ -115,6 +115,7 @@ ol img {
 
 .navod {
   border-radius: 15px 15px 0 0;
+  margin-bottom: -150px;
 }
 
 .navod li {
@@ -138,4 +139,8 @@ ol .li::marker {
 em {
   padding-left: 10px;
   padding-right: 10px;
+}
+
+.tlacitka {
+  margin-bottom: -20px;
 }
