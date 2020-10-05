@@ -93,6 +93,10 @@ a {
   width: 100%;
 }
 
+.black {
+  filter: invert(100%);
+}
+
 ol {
   text-align: left;
   margin: 5px;
@@ -161,6 +165,26 @@ em {
 }
 
 @media screen and (min-width: 1041px) {
+  .navod h1 {
+    font-size: 8em;
+  }
+
+  .navod ol li {
+    margin-left: 30px;
+  }
+
+  .navod li {
+    font-size: 2rem;
+  }
+
+  em {
+    font-size: 2em;
+  }
+
+  .black {
+    width: 2rem;
+  }
+
   .navod {
     width: 60%;
   }
