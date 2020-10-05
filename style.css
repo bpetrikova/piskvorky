@@ -1,3 +1,12 @@
+html {
+  box-sizing: border-box;
+}
+*,
+:after,
+:before {
+  box-sizing: inherit;
+}
+
 h1 {
   font-family: Lobster;
   text-align: center;
@@ -16,7 +25,7 @@ h1 {
 }
 
 .kontejner {
-  width: 27.5%;
+  width: 370px;
   margin-top: 60px;
 }
 
@@ -26,7 +35,6 @@ h1 {
 
 body {
   display: flex;
-  justify-content: center;
   align-items: center;
   flex-direction: column;
   color: #ffffff;
@@ -63,14 +71,17 @@ a {
 .zacit-hrat a {
 }
 
-.pravidla {
+.pravidla,
+.uvodni-stranka {
   background-color: #1fcca4;
   width: 100%;
   margin-bottom: 1.5px;
 }
 
 .pravidla a:focus,
-.pravidla a:hover {
+.pravidla a:hover,
+.uvodni-stranka a:focus,
+.uvodni-stranka a:hover {
   background-color: #1cbb96;
   width: 100%;
 }
@@ -85,6 +96,15 @@ a {
   width: 100%;
 }
 
+ol {
+  text-align: left;
+  margin: 5px;
+  padding: 0px 25px 10px 40px;
+}
+
+ol li {
+  padding: 5px;
+}
 ol img {
   width: 1rem;
 }
@@ -94,20 +114,28 @@ ol img {
 }
 
 .navod {
-  border-radius: 20px 20px 0 0;
+  border-radius: 15px 15px 0 0;
 }
 
 .navod li {
-  padding-left: 20px;
-  padding-right: 20px;
   font-family: sans-serif;
   line-height: 1.6;
 }
 
-.instrukce img {
-  width: 90%;
+figure img {
+  width: 100%;
+  padding-top: 20px;
 }
 
-.instrukce {
-  text-align: start;
+figcaption {
+  text-align: center;
+}
+
+ol .li::marker {
+  text-align: left;
+}
+
+em {
+  padding-left: 10px;
+  padding-right: 10px;
 }
