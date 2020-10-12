@@ -223,7 +223,8 @@ button {
   border: 1px solid black;
   padding: 7px;
   margin: 0;
-  background-color: transparent;
+  background-color: whitesmoke;
+  opacity: 0.6;
 }
 
 button:focus,
@@ -264,7 +265,7 @@ button:hover {
   margin-bottom: 1.5px;
   border-radius: 10px;
   position: absolute;
-  right: 60px;
+  right: 50px;
 }
 
 .zahlavi {
