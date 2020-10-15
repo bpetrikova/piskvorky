@@ -243,10 +243,12 @@ button:hover {
 .hraci_pole {
   display: grid;
   justify-content: stretch;
-  grid-template-columns: 8vmin 8vmin 8vmin 8vmin 8vmin 8vmin 8vmin 8vmin 8vmin 8vmin;
-  grid-template-rows: 8vmin 8vmin 8vmin 8vmin 8vmin 8vmin 8vmin 8vmin 8vmin 8vmin;
+  grid: repeat(10, 1fr) / repeat(10, 1fr);
+  width: 80vmin;
+  height: 80vmin;
   border: 1px solid black;
-  box-shadow: 2px 2px rosybrown;
+  box-shadow: 4px 2px 6px rgba(0, 0, 0, 0.3),
+    4px 2px 6px rgba(0, 0, 0, 0.3) inset;
 }
 
 .hra {
@@ -258,6 +260,7 @@ button:hover {
 
 .kolecko {
   width: 1em;
+  transform: translateY(2px);
 }
 
 .domecek {
