@@ -276,11 +276,7 @@ button:hover {
 }
 
 .circle {
-  border: 3px solid white;
-  border-radius: 50%;
-  display: inline-block;
   width: 1em;
-  height: 1em;
   transform: translateY(2px);
 }
 
@@ -317,4 +313,19 @@ button:hover {
 .icons a {
   width: 2.5em;
   height: 2.5em;
+}
+
+.board__field--circle,
+.board__field--circle {
+  background-image: url(circle.svg);
+  background-repeat: no-repeat;
+  background-size: 2rem;
+  background-position: center;
+}
+
+.board__field--cross {
+  background-image: url(cross.svg);
+  background-repeat: no-repeat;
+  background-size: 2rem;
+  background-position: center;
 }
