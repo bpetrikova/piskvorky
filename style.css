@@ -96,8 +96,9 @@ a {
   width: 100%;
 }
 
-.black {
+.white {
   filter: invert(100%);
+  width: 1.5rem;
 }
 
 ol {
@@ -190,10 +191,6 @@ em {
     font-size: 1em;
   }
 
-  .black {
-    width: 1.5rem;
-  }
-
   .navod {
     width: 60%;
   }
@@ -275,7 +272,7 @@ button:hover {
   font-size: 1.2em;
 }
 
-.circle {
+.c-ikon {
   width: 1em;
   transform: translateY(2px);
 }
@@ -314,6 +311,8 @@ button:hover {
   width: 2.5em;
   height: 2.5em;
 }
+
+/* css pro javascript */
 
 .board__field--circle,
 .board__field--circle {

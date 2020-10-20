@@ -1,23 +1,27 @@
 'use strict';
 
-const button = document.querySelectorAll("button")
+console.log('funguju!');
 
-let praveHraje = 'circle';
+let tah = 'circle';
 
-button.addEventListener("click", () => {
+let hrac = document.querySelector('.player');
 
-  if (praveHraje === "circle") {
-    button.classList.add("board__field--circle");
-    
+const buttons = document.querySelectorAll('button');
+
+for (let i = 0; i < buttons.length; i++) {
+  buttons[i].addEventListener('click', (event) => {
+    if (tah === 'circle') {
+      event.target.classList.toggle('board__field--circle');
+      hrac.innerHTML = `hraje:
+      <img class="c-ikon white" src="cross.svg" alt="kolečko" />`;
+      tah = 'cross';
+      event.target.setAttribute('disabled', true);
+    } else if (tah === 'cross') {
+      event.target.classList.toggle('board__field--cross');
+      hrac.innerHTML = `hraje:
+      <img class="c-ikon white" src="circle.svg" alt="kolečko" />`;
+      tah = 'circle';
+      event.target.setAttribute('disabled', true);
     }
-
-
-})
-
-
-if praveHraje = "circle" {
-button.classList.add("board__field--circle");
-}
-else {
-  button.classList.add("board__field--cross");
+  });
 }
