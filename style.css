@@ -313,18 +313,14 @@ button:hover {
 }
 
 /* css pro javascript */
-
-.board__field--circle,
 .board__field--circle {
-  background-image: url(circle.svg);
+  background-image: url(img/circle.svg);
   background-repeat: no-repeat;
   background-size: 2rem;
   background-position: center;
 }
-
 .board__field--cross {
-  background-image: url(cross.svg);
+  background-image: url(img/cross.svg);
   background-repeat: no-repeat;
   background-size: 2rem;
   background-position: center;
-}

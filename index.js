@@ -13,13 +13,13 @@ for (let i = 0; i < buttons.length; i++) {
     if (tah === 'circle') {
       event.target.classList.toggle('board__field--circle');
       hrac.innerHTML = `hraje:
-      <img class="c-ikon white" src="cross.svg" alt="kolečko" />`;
+      <img class="c-ikon white" src="img/cross.svg" alt="křížek" />`;
       tah = 'cross';
       event.target.setAttribute('disabled', true);
     } else if (tah === 'cross') {
       event.target.classList.toggle('board__field--cross');
-      hrac.innerHTML = `hraje:
-      <img class="c-ikon white" src="circle.svg" alt="kolečko" />`;
+      hrac.innerHTML = ` hraje:
+      <img class="c-ikon white" src="img/circle.svg" alt="kolečko" />`;
       tah = 'circle';
       event.target.setAttribute('disabled', true);
     }
