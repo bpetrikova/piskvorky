@@ -16,14 +16,18 @@ for (let i = 0; i < buttons.length; i++) {
       hrac.alt = `hraje křížek`;
       tah = `cross`;
       event.target.disabled = true;
+      vyhra(event.target);
     } else if (tah === 'cross') {
       event.target.classList.add('board__field--cross');
       hrac.src = `img/circle.svg`;
       hrac.alt = `hraje kolečko`;
       tah = 'circle';
       event.target.disabled = true;
+      vyhra(event.target);
     }
-    console.log(getPosition(buttons[i]));
+    console.log('Get position', getPosition(event.target));
+    console.log('Get symbol', getSymbol(event.target));
+    console.log('Winning', isWinningMove(event.target));
 
     // vypisuje na jaký button se kliklo
   });
@@ -54,7 +58,6 @@ const getSymbol = (field) => {
   }
 };
 
-const symbolsToWin = 5;
 const isWinningMove = (field) => {
   const origin = getPosition(field);
   const symbol = getSymbol(field);
@@ -72,16 +75,18 @@ const isWinningMove = (field) => {
   // Koukni doprava
   i = origin.column;
   while (
-    i < boardSize - 1 &&
+    i < hraciPole - 1 &&
     symbol === getSymbol(getField(origin.row, i + 1))
   ) {
     inRow++;
     i++;
   }
 
-  if (inRow >= symbolsToWin) {
+  if (inRow >= 5) {
     return true;
   }
+
+  // 5 tam je, protože vždy potřebujeme 5 aby hráč vyhrál
 
   let inColumn = 1;
   // Koukni nahoru
@@ -94,16 +99,28 @@ const isWinningMove = (field) => {
   // Koukni dolu
   i = origin.row;
   while (
-    i < boardSize - 1 &&
+    i < hraciPole - 1 &&
     symbol === getSymbol(getField(i + 1, origin.column))
   ) {
     inColumn++;
     i++;
   }
 
-  if (inColumn >= symbolsToWin) {
+  if (inColumn >= 5) {
     return true;
   }
 
   return false;
+};
+
+const vyhra = (field) => {
+  if (isWinningMove(field) === true) {
+    if (getSymbol(field) === 'circle') {
+      window.confirm('Vyhrálo kolečko! Co takhle odvetu?');
+      location.reload();
+    } else if (getSymbol(field) === 'cross') {
+      window.confirm('Vyhrál křížek! Co takhle odvetu?');
+      location.reload();
+    }
+  }
 };
