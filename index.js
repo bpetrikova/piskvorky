@@ -112,15 +112,20 @@ const isWinningMove = (field) => {
 
   return false;
 };
-
 const vyhra = (field) => {
   if (isWinningMove(field) === true) {
     if (getSymbol(field) === 'circle') {
-      window.confirm('Vyhrálo kolečko! Co takhle odvetu?');
-      location.reload();
+      setTimeout(
+        () => window.confirm('Vyhrálo kolečko! Co takhle odvetu?'),
+        10,
+        location.reload(),
+      );
     } else if (getSymbol(field) === 'cross') {
-      window.confirm('Vyhrál křížek! Co takhle odvetu?');
-      location.reload();
+      setTimeout(
+        () => window.confirm('Vyhrál křížek! Co takhle odvetu?'),
+        10,
+        location.reload(),
+      );
     }
   }
 };
