@@ -117,14 +117,14 @@ const vyhra = (field) => {
     if (getSymbol(field) === 'circle') {
       setTimeout(
         () => window.confirm('Vyhrálo kolečko! Co takhle odvetu?'),
-        10,
         location.reload(),
+        10,
       );
     } else if (getSymbol(field) === 'cross') {
       setTimeout(
         () => window.confirm('Vyhrál křížek! Co takhle odvetu?'),
-        10,
         location.reload(),
+        10,
       );
     }
   }
